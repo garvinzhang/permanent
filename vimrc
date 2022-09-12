@@ -9,10 +9,16 @@ set autoindent                  "自 动 缩 进 开 关
 set showmatch                   "高 亮 显 示 括 号 匹 配                                        
 set ruler                       "右 下 角 显 示 当 前 光 标 位 置                                  
 set hlsearch                    "高 亮 显 示 搜 索 结 果                                        
-set nu                          "显 示 行 号                                                
+set number                      "显 示 行 号                                                
 set laststatus=2                "1=启 动 显 示 状 态 行 、 2=总 是 显 示 状 态 行                      
 set t_Co=256                    "terminal Color 开 启 256色 支 持                            
 syntax enable                   "语 法 高 亮 显 示                                            
-set backspace=2                 "indet,eol,start                                        
+set backspace=indent,eol,start  "indet,eol,start                                        
 set incsearch                   "输 入 字 符 串 就 显 示 匹 配 点                                  
-set cindent                     "以 C语 言 的 方 式 缩 进                                       
+"set cindent                     "以 C语 言 的 方 式 缩 进                                       
+
+set nocompatible
+set smartindent
+set expandtab
+set showmode
+
