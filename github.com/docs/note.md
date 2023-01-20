@@ -39,7 +39,7 @@ git config --global user.name "name"
 #### docker
 
 ```
-docker build -t ImageName:Tag
+docker build -t ImageName:Tag -f Dockerfile .
 
 docker run -it --name ContainerName -v LocalDir:ContainerDir ImageName:Tag /bin/bash
 ```
